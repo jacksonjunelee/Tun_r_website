@@ -5,10 +5,8 @@
 	<p><%= @song.album %></p>
 	<p>
 		<audio controls>
-			<source src="<%= @song.preview_url %>" /></source>
+			<source src="<%= @song.preview_url %>"></source>
 		</audio>
 	</p>
-
-
 </div>
 <a href="/songs/<%= @song.id %>/edit">Edit</a>

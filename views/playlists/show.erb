@@ -2,7 +2,7 @@
 <div style="width:95%; margin: 0 auto; ">
 <% @playlist.songs.each do |song| %>
   <div class="playlist song">
-    <h4>
+    <h4> 
       <%= song.title %> |
       <span>
         <form action="/playlists/<%= @playlist.id %>/remove_song" method="post">
@@ -12,6 +12,7 @@
         </form>
       </span>
     </h4>
+
     <p>
       <audio controls>
         <source src="<%= song.preview_url %>"></source>
